@@ -7,7 +7,6 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		IMyData di;
 		List<IMyData> lstObjects = new ArrayList<IMyData>();
 		
 		
@@ -15,15 +14,15 @@ public class Main {
 		producto.setName("peras");
 		producto.setCodigo("00345");
 		lstObjects.add(producto);
-		
-		Customer cliente = new Customer();
+	/*	
+		Customer cliente = new Customer(null);
 		cliente.setName("juan carlos godinez");
 		cliente.setRut("23.244.634-2");
 		lstObjects.add(cliente);
-		
+	*/	
 		Employee empleado = new Employee();
 		empleado.setName("pedro perez pereira");
-		cliente.setRut("23.244.634-2");
+		empleado.setRut("23.244.634-2");
 		lstObjects.add(empleado);
 		
 		Car auto = new Car();
@@ -35,6 +34,11 @@ public class Main {
 			System.out.println(cur.getName());
 		}
 		
+		WebServiceMock wsm = new WebServiceMock();
+		WebService ws = new WebService();
+		
+		Customer cc = new Customer(wsm);
+		System.out.println(cc.getAmount());
 	}
 
 }

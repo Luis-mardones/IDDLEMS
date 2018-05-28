@@ -11,7 +11,7 @@ public class Employee implements IMyData {
 		Rut = rut;
 	}
 	public String getName() {
-		return Name;
+		return "Employee: " + Name;
 	}
 	public void setName(String name) {
 		Name = name;

@@ -11,7 +11,7 @@ public class Customer implements IMyData {
 		Rut = rut;
 	}
 	public String getName() {
-		return Name;
+		return "Customer: " +Name;
 	}
 	public void setName(String name) {
 		Name = name;

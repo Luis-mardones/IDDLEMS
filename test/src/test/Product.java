@@ -12,7 +12,7 @@ public class Product implements IMyData{
 		Codigo = codigo;
 	}
 	public String getName() {
-		return Name;
+		return "Producto: " +Name;
 	}
 	public void setName(String name) {
 		Name = name;

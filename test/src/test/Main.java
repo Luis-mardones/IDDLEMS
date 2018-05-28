@@ -26,20 +26,23 @@ public class Main {
 		auto.setCode("12");
 		
 		di = producto;
-		System.out.println("Product: " + di.getName());
+		System.out.println(di.getName());
 		di = cliente;
-		System.out.println("Client: " + di.getName());
-		
-		
-		
-		
-		
+		System.out.println(di.getName());
 		
 		
 		di = empleado;
-		System.out.println("Employee: " + di.getName());
+		System.out.println(di.getName());
 		di = auto;
-		System.out.println("Car: " + di.getName());
+		System.out.println(di.getName());
+		
+		operation(cliente);
+	}
+	
+	private static void operation(Customer cus) {
+		cus.getName();
+		System.out.println(cus.getName());
+		
 	}
 
 }

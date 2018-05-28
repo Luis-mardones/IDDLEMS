@@ -10,7 +10,7 @@ public class Car implements IMyData{
 		Code = code;
 	}
 	public String getName() {
-		return Name;
+		return "Car: " + Name;
 	}
 	public void setName(String name) {
 		Name = name;
